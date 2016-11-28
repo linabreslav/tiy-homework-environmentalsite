@@ -1,0 +1,147 @@
+body, h1, h2, h3, h4, h5, h6, p, div {
+  padding: 0px;
+  margin: 0px;
+  border: 0px; }
+
+header {
+  position: relative;
+  height: 500px; }
+  header img {
+    z-index: 1;
+    height: 75px;
+    width: auto;
+    position: absolute;
+    left: 15%;
+    top: 4%; }
+  header video {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -100;
+    height: auto;
+    width: 100%; }
+  header h1 {
+    text-transform: uppercase;
+    font-style: sans serif;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    font-size: 40px;
+    color: #305291; }
+  header h3 {
+    text-transform: uppercase;
+    font-style: sans serif;
+    text-align: center;
+    position: relative;
+    top: 40%;
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 0 25%; }
+  header nav {
+    float: right; }
+  header .menu {
+    list-style: none;
+    position: absolute;
+    right: 15%;
+    top: 4%; }
+    header .menu li {
+      float: right;
+      padding: 10px; }
+    header .menu a {
+      background-color: white;
+      color: #305291;
+      display: block;
+      padding: 15px;
+      text-decoration: none; }
+    header .menu a:hover {
+      background-color: #305291;
+      color: white; }
+  header .dropdown {
+    position: relative; }
+  header .dropnav {
+    position: absolute;
+    display: none;
+    list-style: none; }
+    header .dropnav li {
+      width: 150px;
+      padding: 0px; }
+  header .dropdown:hover .dropnav {
+    display: block; }
+
+.section1 {
+  background-color: #305291;
+  color: white;
+  text-align: center;
+  padding: 8%; }
+  .section1 h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 19.92px; }
+  .section1 h3 {
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 2em;
+    padding: 0 10%; }
+  .section1 hr {
+    width: 885.5px; }
+
+.section2 {
+  background-color: #f2f2f2;
+  color: #305291;
+  text-align: center;
+  overflow: hidden;
+  padding: 2%; }
+  .section2 i {
+    padding: 10px;
+    border: 1px solid #305291;
+    border-radius: 100%; }
+  .section2 i:hover {
+    background-color: #305291;
+    color: white; }
+  .section2 .articles {
+    overflow: hidden;
+    padding: 5%;
+    padding-left: 15%; }
+    .section2 .articles div {
+      background-color: white;
+      height: 320px;
+      width: 180px;
+      float: left;
+      margin: 1%;
+      padding: 1%; }
+  .section2 h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 19.92px;
+    padding: 2% 0; }
+  .section2 h2 {
+    text-transform: uppercase;
+    font-size: 17px;
+    margin: 5px;
+    display: block;
+    padding: 5px; }
+  .section2 h3 {
+    font-weight: lighter;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.7em;
+    display: block;
+    padding: 0 15%; }
+  .section2 hr {
+    width: 885.5px; }
+
+footer {
+  background-color: #f2f2f2;
+  overflow: hidden;
+  clear: both;
+  text-align: center;
+  padding: 3% 0%; }
+  footer p {
+    padding: 10% 7%;
+    text-decoration: none;
+    color: #305291;
+    display: inline; }
+
+/*# sourceMappingURL=style.css.map */

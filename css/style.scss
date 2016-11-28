@@ -1,0 +1,216 @@
+
+@import "variables";
+@import "mixins";
+// extends use @extend .class to use all the code for it plus add code
+
+// Index
+//   1. HEADER
+//   2. SECTION1
+//   3. SECTION2
+//   4. FOOTER
+
+
+// general fixes
+body,h1,h2,h3,h4,h5,h6,p,div {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+// 1. HEADER
+
+header {
+  position: relative;
+  height: 500px;
+
+  img {
+    z-index: 1;
+    height: 75px;
+    width: auto;
+    position: absolute;
+    left: 15%;
+    top: 4%;
+  }
+
+  video {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -100;
+    height: auto;
+    width: 100%;
+  }
+
+  h1 {
+    @include fontstyleh1;
+    position: relative;
+    top: 30%;
+    font-size: 40px;
+    color: $maincolor;
+  }
+
+  h3{
+    @include fontstyleh1;
+    position: relative;
+    top: 40%;
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 0 25%;
+  }
+
+  nav{
+    float: right;
+  }
+    .menu {
+      list-style: none;
+      position: absolute;
+      right: 15%;
+      top: 4%;
+
+      li {
+        float: right;
+        padding: 10px;
+       }
+
+       a {
+         background-color: white;
+         color: $maincolor;
+         display: block;
+         padding: 15px;
+         text-decoration: none;
+       }
+
+       a:hover {
+         background-color: $maincolor;
+         color: white;
+       }
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropnav {
+      position: absolute;
+      display: none;
+      list-style: none;
+
+      li {
+        width: 150px;
+        padding: 0px;
+      }
+    }
+
+    .dropdown:hover .dropnav{
+      display: block;
+    }
+}
+
+// 2. SECTION 1
+
+.section1 {
+  background-color: $maincolor;
+  color: white;
+  text-align: center;
+  padding: 8%;
+
+  h1{
+   text-transform: uppercase;
+   font-size: 25px;
+   margin: 19.92px;
+  }
+
+  h3 {
+    font-weight: lighter;
+    font-size: 15px;
+    line-height: 2em;
+    padding: 0 10%;
+  }
+
+  hr {
+    width: 885.5px;
+  }
+}
+
+// 3. SECTION 2
+
+.section2 {
+  background-color: #f2f2f2;
+  color: $maincolor;
+  text-align: center;
+  overflow: hidden;
+  padding: 2%;
+
+  i {
+    padding: 10px;
+    border: 1px solid $maincolor;
+    border-radius: 100%;
+  }
+
+  i:hover {
+    background-color: $maincolor;
+    color: white;
+  }
+
+  .articles {
+    overflow: hidden;
+    padding: 5%;
+    padding-left: 15%;
+
+    div {
+      background-color: white;
+      height: 320px;
+      width: 180px;
+      float: left;
+      margin: 1%;
+      padding: 1%;
+        }
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 19.92px;
+    padding: 2% 0;
+  }
+
+  h2{
+   text-transform: uppercase;
+   font-size: 17px;
+   margin: 5px;
+   display: block;
+   padding: 5px;
+  }
+
+  h3 {
+    font-weight: lighter;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.7em;
+    display: block;
+    padding: 0 15%;
+  }
+
+  hr {
+    width: 885.5px;
+  }
+
+}
+
+// 4. FOOTER
+
+footer {
+  background-color: #f2f2f2;
+  overflow: hidden;
+  clear: both;
+  text-align: center;
+  padding: 3% 0%;
+    p {
+      padding: 10% 7%;
+      text-decoration: none;
+      color: $maincolor;
+      display: inline;
+    }
+}
